@@ -1,0 +1,70 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+.panel-title {
+  position: relative;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+.panel-body {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+.panel {
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+  margin: 0px auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: margin 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+  &:not([expanded]) > .panel-title:hover {
+    background: #e3e3e3;
+  }
+  &[expanded] {
+    margin: 1rem auto;
+    width: 100%;
+    .panel-body {
+      height: auto;
+    }
+    .drop-icon {
+      transform: rotate(200grad);
+    }
+  }
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+.drop-icon {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 0.25rem;
+  pointer-events: none;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.panel-title-value {
+  margin-left: 1rem;
+  color: #444;
+}

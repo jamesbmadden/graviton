@@ -1,0 +1,58 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+@import '../shared.less';
+
+* {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+.fieldInput {
+  box-sizing:border-box;
+  padding:0px 12px;
+  width:100%;
+  height:3.5rem;
+  background:#fff;
+  border:1px solid #bdbdbd;
+  border-radius: 4px;
+  position:relative;
+  font-size:16pt;
+  z-index:1;
+  -webkit-appearance: none;
+  transition:border 0.2s cubic-bezier(1,0,0,1);
+  &:focus {
+    outline: none;
+    border: 1px solid @red;
+    & ~ .highlight {
+      background-color:@red;
+    }
+    & ~ .fieldInputLabel {
+      color:@red;
+    }
+  }
+}
+.fieldInputLabel {
+  z-index:2;
+  position:absolute;
+  top:18px;
+  left:2px;
+  color:#222;
+  background: #fff;
+  transition:transform 0.2s cubic-bezier(1,0,0,1), font-size 0.2s cubic-bezier(1,0,0,1), color 0.2s cubic-bezier(1,0,0,1);
+  transform:translate(4px,-24px);
+  font-size:12px;
+  pointer-events:none;
+  &, supports:placeholder-shown {
+    transform:translate(0px,0px);
+    font-size:16px;
+  }
+}
+.fieldInput:focus ~ .fieldInputLabel, .fieldInput:not(:placeholder-shown) ~ .fieldInputLabel {
+  transform:translate(4px,-24px);
+  font-size:12px;
+}
+.inputContainer {
+  position:relative;
+  margin-top:12px;
+}
