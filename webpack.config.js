@@ -5,7 +5,8 @@ module.exports = {
     button: './src/gvt-button.js',
     input: './src/gvt-input.js',
     dropdown: './src/gvt-dropdown.js',
-    panel: './src/gvt-panel.js'
+    panel: './src/gvt-panel.js',
+    shape: './src/gvt-shape.js'
   },
   mode: 'production',
   output: {
