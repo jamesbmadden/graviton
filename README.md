@@ -2,22 +2,14 @@
 Web Components Designed by James Madden, Built with LitElement, Loosely Following Material Spec.
 
 ## Install
-```
-git clone https://github.com/jamesbmadden/graviton
-cd graviton
-yarn install
-```
+Graviton currently has 5 components:
+* gvt-button
+* gvt-input
+* gvt-dropdown
+* gvt-panel
+* And, in Beta, gvt-shape
 
-## Build
+Install the npm package. For example, to install gvt-button, run:
 ```
-yarn build
-```
-
-## Use in a Project
-```
-yarn link
-```
-Then, in your project's directory, run
-```
-yarn link graviton
+npm install @graviton/button
 ```
