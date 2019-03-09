@@ -3,7 +3,7 @@ Input Web Component Designed By James Madden, Loosely following the Material Spe
 
 ## Install
 ```
-git install @graviton/input
+npm install @graviton/input
 ```
 
 Import the component into your app:

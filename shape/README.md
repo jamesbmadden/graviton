@@ -3,7 +3,7 @@ Shape Web Component Designed By James Madden, Loosely following the Material Spe
 
 ## Install
 ```
-git install @graviton/shape
+npm install @graviton/shape
 ```
 
 Import the component into your app:

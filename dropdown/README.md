@@ -3,7 +3,7 @@ Dropdown Web Component Designed By James Madden, Loosely following the Material 
 
 ## Install
 ```
-git install @graviton/dropdown
+npm install @graviton/dropdown
 ```
 
 Import the component into your app:

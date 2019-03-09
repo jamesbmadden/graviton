@@ -3,7 +3,7 @@ Panel Web Component Designed By James Madden, Loosely following the Material Spe
 
 ## Install
 ```
-git install @graviton/panel
+npm install @graviton/panel
 ```
 
 Import the component into your app:

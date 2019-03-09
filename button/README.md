@@ -3,7 +3,7 @@ Button Web Component Designed By James Madden, Loosely following the Material Sp
 
 ## Install
 ```
-git install @graviton/button
+npm install @graviton/button
 ```
 
 Import the component into your app:
