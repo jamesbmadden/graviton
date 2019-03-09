@@ -20,7 +20,7 @@ export class GravitonButton extends LitElement {
       <div class="btn-wrapping">
         <button class="btn ${this.filled ? 'fill' : 'light'}">
           <slot></slot>
-          <mwc-ripple ?accent=${this.filled}></mwc-ripple>
+          <mwc-ripple ?primary=${!this.filled} ?accent=${this.filled}></mwc-ripple>
         </button>
       </div>
     `;
