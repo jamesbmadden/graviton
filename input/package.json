@@ -1,6 +1,6 @@
 {
   "name": "@graviton/input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Input Web Component Designed By James Madden, Loosely following the Material Spec",
   "main": "index.js",
   "repository": "https://github.com/jamesbmadden/graviton",
