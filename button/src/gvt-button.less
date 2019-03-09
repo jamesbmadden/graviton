@@ -28,6 +28,11 @@
   transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
               border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
               color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: #ffcdd2;
+    border-color: #e53935;
+    color: #b71c1c;
+  }
   @media (prefers-color-scheme: dark) {
     background-color: #222;
     color: white;
@@ -36,11 +41,6 @@
       border-color: #e53935;
       color: #ffcdd2;
     }
-  }
-  &:hover {
-    background-color: #ffcdd2;
-    border-color: #e53935;
-    color: #b71c1c;
   }
   &.fill {
     color: white;
