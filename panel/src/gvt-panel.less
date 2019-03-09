@@ -27,8 +27,12 @@
   -ms-user-select: none;
   user-select: none;
   z-index: 1;
+  background: #fff;
   &:not([expanded]) > .panel-title:hover {
     background: #e3e3e3;
+    @media (prefers-color-scheme: dark) {
+      background-color: #444;
+    }
   }
   &[expanded] {
     margin: 1rem auto;
@@ -39,6 +43,10 @@
     .drop-icon {
       transform: rotate(200grad);
     }
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: #333;
+    color: white;
   }
 }
 .material-icons {
@@ -67,4 +75,7 @@
 .panel-title-value {
   margin-left: 1rem;
   color: #444;
+  @media (prefers-color-scheme: dark) {
+    color: #e3e3e3;
+  }
 }
