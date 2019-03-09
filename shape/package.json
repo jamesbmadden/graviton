@@ -1,0 +1,32 @@
+{
+  "name": "@graviton/shape",
+  "version": "0.1.0",
+  "description": "Shape Web Component Designed By James Madden, Loosely following the Material Spec",
+  "main": "index.js",
+  "repository": "https://github.com/jamesbmadden/graviton",
+  "author": "James Madden",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "autoprefixer": "^9.4.10",
+    "lit-element": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "IE 11"
+  ]
+}
