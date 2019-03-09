@@ -8,7 +8,6 @@
   "license": "MPL-2.0",
   "private": false,
   "dependencies": {
-    "@material/mwc-ripple": "^0.3.6",
     "autoprefixer": "^9.4.10",
     "lit-element": "^2.0.1"
   },
