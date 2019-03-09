@@ -25,12 +25,14 @@
   &:focus {
     outline: none;
     border: 1px solid @red;
-    & ~ .highlight {
-      background-color:@red;
-    }
     & ~ .fieldInputLabel {
       color:@red;
     }
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
   }
 }
 .fieldInputLabel {
@@ -47,6 +49,10 @@
   &, supports:placeholder-shown {
     transform:translate(0px,0px);
     font-size:16px;
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: #333;
+    color: white;
   }
 }
 .fieldInput:focus ~ .fieldInputLabel, .fieldInput:not(:placeholder-shown) ~ .fieldInputLabel {
