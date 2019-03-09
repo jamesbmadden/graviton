@@ -17,6 +17,11 @@ select {
   cursor: pointer;
   background-color: transparent;
   -webkit-appearance: none;
+  @media (prefers-color-scheme: dark) {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+  }
 }
 .select-container {
   position:relative;
@@ -33,6 +38,10 @@ select {
   transform:translate(4px,-24px);
   font-size:12px;
   pointer-events:none;
+  @media (prefers-color-scheme: dark) {
+    background-color: #333;
+    color: white;
+  }
 }
 select:focus {
   outline: none;
@@ -62,5 +71,7 @@ select:focus ~ .select-label {
   font-size: 1.5rem;
   right: 0.25rem;
   top: 1rem;
-  pointer-events: none;
+  pointer-events: none;@media (prefers-color-scheme: dark) {
+    color: white;
+  }
 }
