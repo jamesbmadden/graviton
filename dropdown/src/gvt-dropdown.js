@@ -32,7 +32,7 @@ class GravitonDropdown extends LitElement {
           })}
         </select>
         <label class="select-label" for="select"><slot></slot></label>
-        <i class="material-icons drop-icon">arrow_drop_down</i>
+        <svg class="drop-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
       </div>
     `;
   }
