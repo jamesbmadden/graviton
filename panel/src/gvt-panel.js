@@ -32,7 +32,7 @@ class GravitonPanel extends LitElement {
           this.expanded = !this.expanded;
         }}>
           <slot name="title"></slot><p class="panel-title-value">${this.value !== 'undefined' ? this.value : ''}</p>
-          <i class="material-icons drop-icon">arrow_drop_down</i>
+          <svg class="drop-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
         </div>
         <div class="panel-body">
           <slot name="body"></slot>

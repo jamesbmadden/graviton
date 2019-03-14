@@ -49,28 +49,17 @@
     color: white;
   }
 }
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-}
 .drop-icon {
   position: absolute;
   font-size: 1.5rem;
   right: 0.25rem;
   pointer-events: none;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  @media (prefers-color-scheme: dark) {
+    * {
+      fill: white;
+    }
+  }
 }
 .panel-title-value {
   margin-left: 1rem;
