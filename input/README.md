@@ -1,5 +1,22 @@
 # Graviton Input
 Input Web Component Designed By James Madden, Loosely following the Material Spec.
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="https://unpkg.com/@graviton/input@latest"></script>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<gvt-input>Input</gvt-input>
+<gvt-input type="date">Date Input</gvt-input>
+<gvt-input type="time">Time Input</gvt-input>
+<gvt-input value="Jay">Name</gvt-input>
+```
 
 ## Install
 ```
