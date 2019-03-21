@@ -1,5 +1,20 @@
 # Graviton Button
 Button Web Component Designed By James Madden, Loosely following the Material Spec.
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="https://unpkg.com/@graviton/button@latest"></script>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<gvt-button>Button</gvt-button>
+<gvt-button filled>Filled Button</gvt-button>
+```
 
 ## Install
 ```
