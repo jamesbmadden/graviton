@@ -1,5 +1,19 @@
 # Graviton Dropdown
 Dropdown Web Component Designed By James Madden, Loosely following the Material Spec.
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="https://unpkg.com/@graviton/dropdown@latest"></script>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<gvt-dropdown options='["Hello", "World", "Foo", "Bar", "Five", "Six"]'>Dropdown</gvt-dropdown>
+```
 
 ## Install
 ```
