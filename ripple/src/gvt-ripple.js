@@ -33,7 +33,7 @@ class GravitonRipple extends LitElement {
             this.shadowRoot.removeChild(ripple);
           }, 200);
         }
-      }, 800);
+      }, 400);
       ripple.addEventListener('mouseup', event => {
         mouseUp = true;
         if (beenTime) {
@@ -68,7 +68,7 @@ class GravitonRipple extends LitElement {
           position: relative;
           border-radius: 50%;
           opacity: 0.1;
-          animation: ripple 0.8s;
+          animation: ripple 0.4s;
           transition: opacity 0.2s;
         }
         .ripple.fade {
