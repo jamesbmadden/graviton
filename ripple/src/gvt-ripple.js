@@ -31,7 +31,7 @@ class GravitonRipple extends LitElement {
           ripple.classList.add('fade');
           setTimeout(() => {
             this.shadowRoot.removeChild(ripple);
-          }, 400);
+          }, 200);
         }
       }, 800);
       ripple.addEventListener('mouseup', event => {
@@ -40,7 +40,7 @@ class GravitonRipple extends LitElement {
           ripple.classList.add('fade');
           setTimeout(() => {
             this.shadowRoot.removeChild(ripple);
-          }, 400);
+          }, 200);
         }
       });
     });
@@ -69,7 +69,7 @@ class GravitonRipple extends LitElement {
           border-radius: 50%;
           opacity: 0.1;
           animation: ripple 0.8s;
-          transition: opacity 0.4s;
+          transition: opacity 0.2s;
         }
         .ripple.fade {
           opacity: 0;
