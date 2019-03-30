@@ -1,6 +1,6 @@
 {
   "name": "@graviton/ripple",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Ripple Web Component Designed By James Madden, Loosely following the Material Spec",
   "main": "index.js",
   "repository": "https://github.com/jamesbmadden/graviton",
