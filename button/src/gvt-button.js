@@ -20,7 +20,7 @@ export class GravitonButton extends LitElement {
       <div class="btn-wrapping">
         <button class="btn ${this.filled ? 'fill' : 'light'}">
           <slot></slot>
-          <gvt-ripple color=${this.filled ? 'white' : '#e53935'}></gvt-ripple>
+          <!-- <gvt-ripple color=${this.filled ? 'white' : '#e53935'}></gvt-ripple> -->
         </button>
       </div>
     `;
