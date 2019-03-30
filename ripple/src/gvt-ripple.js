@@ -18,7 +18,7 @@ class GravitonRipple extends LitElement {
       const { x, y, width, height} = this.getBoundingClientRect();
       ripple.className = 'ripple';
       ripple.style.backgroundColor = this.colour || 'black';
-      let diameter = Math.max(width, height)*4; // Finds the longer dimension of the element and sets it as the diameter
+      let diameter = Math.max(width, height)*3; // Finds the longer dimension of the element and sets it as the diameter
       ripple.style.top = `${event.clientY - y - diameter/2}px`;
       ripple.style.left = `${event.clientX - x - diameter/2}px`;
       ripple.style.height = ripple.style.width = `${diameter}px`;
