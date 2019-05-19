@@ -152,7 +152,7 @@ window.JSCompiler_renameProperty=((t,e)=>t);const H={toAttribute(t,e){switch(e){
       <div class="btn-wrapping">
         <button class="btn ${this.filled?"fill":"light"}">
           <slot></slot>
-          <!-- <gvt-ripple color=${this.filled?"white":"#e53935"}></gvt-ripple> -->
+          <gvt-ripple color=${this.filled?"white":"#e53935"}></gvt-ripple>
         </button>
       </div>
     `}}customElements.define("gvt-button",dt)}]);
